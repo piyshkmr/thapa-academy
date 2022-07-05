@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+html {
+  scroll-padding-top: 2.4rem;
+  scroll-behavior: smooth;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+section {
+  padding-bottom: 10rem;
+}
+header {
+  padding-bottom: 5rem;
+}
+
+#hero-img {
+  animation: bounce 2s linear infinite alternate-reverse;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+::selection {
+  background-color: #22174b;
+  color: #fff;
+}
+
+.container {
+  margin-inline: auto;
+}
