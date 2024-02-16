@@ -2,7 +2,7 @@ import { MdStar, MdStarHalf } from "react-icons/md";
 
 const CourseCard = ({ item }) => {
   return (
-    <a href={item.link} target="_blank">
+    <a href={item.link} target="_blank" rel="noreferrer">
       <div className="hover:scale-95 p-4 cursor-pointer rounded-2xl transition-transform">
         <img
           src={item.img}
